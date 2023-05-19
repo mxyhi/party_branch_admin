@@ -46,7 +46,7 @@
   };
 
   const [registerTable, { reload }] = useTable({
-    title: '活动列表',
+    title: '用户列表',
     api: async ({ page, pageSize }: { page: number; pageSize: number }) => {
       const res = await getUserList({
         page,

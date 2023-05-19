@@ -83,7 +83,7 @@
   };
 
   const [registerTable, { reload }] = useTable({
-    title: '活动列表',
+    title: '通知列表',
     api: async ({ page, pageSize }: { page: number; pageSize: number }) => {
       const res = await workNoticeListApi({ page, limit: pageSize });
       if (apiUrl) {

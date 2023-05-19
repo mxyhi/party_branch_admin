@@ -26,7 +26,7 @@
   const { apiUrl } = useGlobSetting();
 
   const [registerTable, { reload }] = useTable({
-    title: '交流论坛',
+    title: '党支部列表',
     api: async ({ page, pageSize }: { page: number; pageSize: number }) => {
       const res = await getBranchListApi({ page, limit: pageSize });
       if (apiUrl) {

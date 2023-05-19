@@ -86,7 +86,7 @@
   };
 
   const [registerTable, { reload }] = useTable({
-    title: '活动列表',
+    title: '学习列表',
     api: async ({ page, pageSize }: { page: number; pageSize: number }) => {
       const res = await getHistoryListApi({ page, limit: pageSize });
       if (apiUrl) {
